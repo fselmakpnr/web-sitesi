@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Gönderilen Form Bilgileri</title>
-</head>
-<body>
-  <h2>Gönderilen Form Bilgileri</h2>
+<?php
+$ad="Selma";
+$mail="selma.akpinar@sakarya.edu.tr";
+$pass="123456";
 
-  <ul>
-    <li><strong>Ad:</strong> <?php echo $_POST['name']; ?></li>
-    <li><strong>E-posta:</strong> <?php echo $_POST['email']; ?></li>
-    <li><strong>Mesaj:</strong> <?php echo $_POST['message']; ?></li>
-  </ul>
-</body>
-</html>
+if(isset($_POST['name']))
+{
+$name=$_POST['name'];
+$password=$_POST['password'];
+$email=$_POST['email'];
+}
+ if($name==$ad && $password==$pass && $email==$mail)
+ {
+echo"Giriş Yapıldı";
+ }
+ else {
+  echo"Hata,kullanıcı adı,şifre veya email değerleri yanlış girildi!";
+  }
+?>

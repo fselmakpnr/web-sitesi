@@ -13,9 +13,9 @@
     }
 
     .container {
-      max-width: 400px;
+      width: 300px ;
       padding: 20px;
-      background-color: #fff;
+      background-color: #dbc1c1;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -50,10 +50,12 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      margin-left: 40px;
     }
 
     button[type="reset"] {
       background-color: #f44336;
+      margin-right: 40px;
     }
   </style>
 </head>
@@ -63,7 +65,7 @@
 
     <form action="goster.php" method="post" onsubmit="return validateForm()">
       <div>
-        <label for="name">Ad:</label>
+        <label for="name">Kullanıcı Adı:</label>
         <input type="text" id="name" name="name" required>
       </div>
 
@@ -73,8 +75,8 @@
       </div>
 
       <div>
-        <label for="message">Mesaj:</label>
-        <textarea id="message" name="message" required></textarea>
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required>
       </div>
 
       <div>
